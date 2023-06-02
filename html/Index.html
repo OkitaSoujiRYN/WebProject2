@@ -1,0 +1,119 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/822c1912b7.js" crossorigin="anonymous"></script>
+    <title>Main - Menu</title>
+    <link rel="icon" href="../Images/logos/logo_2.png" type="image.icon type">
+</head>
+<body data-spy="scroll" data-target="#menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="menu">
+        <a class="navbar-brand" href="Index.html"> <img src="../Images/logos/logo.png" alt="logo"> </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item page-scroll">
+                    <a class="nav-link" href="Boot_Figures.html"><h5>Gallery</h5></a>
+                </li>
+                <li class="nav-item page-scroll">
+                    <a class="nav-link" href="Boot_Favourites.html"><h5>Favourites</h5></a>
+                </li>
+                <li class="nav-item page-scroll">
+                    <a class="nav-link" href="A_propos.html"><h5>About</h5></a>
+                </li>
+                <li class="nav-item">
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <video id="bgvid" playsinline autoplay muted loop>
+        <source src="../Videos/One_Piece.mp4" type="video/mp4">
+    </video>
+
+    <div class="jumbotron" id="jumbo-vid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="alert alert-dark" role="alert">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval=7000>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card" style="width: 30rem;">
+                                        <img src="../Images/Cards/Luffy.png" alt="Luffy" height="400" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><i class="fas fa-camera-retro"></i> Figure Showcase <i class="fas fa-camera-retro"></i></h5>
+                                            <p class="card-text">The site has a gallery on Anime Arts with links that redirect you to wikis.</p>
+                                            <a class="btn-dark" href="Boot_Figures.html" role="button">Go check it out !</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card" style="width: 30rem;">
+                                        <img src="../Images/Cards/Goku vs Jiren.gif" alt="GokuVsJiren" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title"> <i class="fas fa-video"></i> Favourites <i class="fas fa-video"></i> </h5>
+                                            <p class="card-text">Create a list of your best animes !</p>
+                                            <a class="btn-dark" href="Boot_Favourites.html" role="button">Won't Stop, Just Go !</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card" style="width: 30rem;">
+                                        <img src="../Images/Cards/Naruto.png" alt="Naruto" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title"> <i class="fas fa-paint-brush"></i> Learn about us <i class="fas fa-paint-brush"></i> </h5>
+                                            <a class="btn-dark" href="A_propos.html" role="button">You can follow us here !</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination pagination-lg justify-content-center">
+                                    <li class="page-item"><a class="page-link" href="#carouselExampleIndicators" role="button" data-slide="prev">Previous</a></li>
+                                    <li class="page-item" data-target="#carouselExampleIndicators" data-slide-to="0"><a class="page-link" href="#carouselExampleIndicators">1</a></li>
+                                    <li class="page-item" data-target="#carouselExampleIndicators" data-slide-to="1"><a class="page-link" href="#carouselExampleIndicators">2</a></li>
+                                    <li class="page-item" data-target="#carouselExampleIndicators" data-slide-to="2"><a class="page-link" href="#carouselExampleIndicators">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#carouselExampleIndicators" role="button" data-slide="next">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h1 class="white-text">Greetings, Animes Fan !</h1>
+                    <p class="white-text">Watch Best Epic Fights and Make your Own Anime Hero</p>
+                    <p class="white-text">This is a website dedicated to anime and manga.</p>
+                    <div class="alert alert-primary" role="alert">
+                        <p> No copyright infringement intended.</p>
+                        <p> All Rights Reserved</p>
+                        <p> By EVUORT Marty and SEBBANE Ryan</p>
+                        <hr>
+                        <a class="btn_ytb_Apropos" href="https://www.nautiljon.com/" role="button" target="blank_2">Join-us</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Footer -->
+    <footer>
+        <a href="A_propos.html">AnimeMangaWorld</a>
+    </footer>
+    <!-- Footer -->
+</body>
+</html>

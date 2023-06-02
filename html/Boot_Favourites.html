@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/822c1912b7.js" crossorigin="anonymous"></script>
+    <title>Favourites - Favoris</title>
+    <link rel="icon" href="../Images/logos/logo_2.png" type="image.icon type">
+    <script type="text/javascript" src="../js/JavaScript.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="menu">
+        <a class="navbar-brand" href="Index.html"> <img src="../Images/logos/logo.png" alt="logo"> </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item page-scroll">
+                    <a class="nav-link" href="Boot_Figures.html"><h5>Gallery</h5></a>
+                </li>
+                <li class="nav-item page-scroll">
+                    <a class="nav-link" href="Boot_Favourites.html"><h5>Favourites</h5></a>
+                </li>
+                <li class="nav-item page-scroll">
+                    <a class="nav-link" href="A_propos.html"><h5>About</h5></a>
+                </li>
+                <li class="nav-item">
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <video id="bgvid" playsinline autoplay muted loop>
+        <source src="../Videos/One_Piece.mp4" type="video/mp4">
+    </video>
+
+    <div id="Boot_Favourites_Menu">
+        <h2> Add your favourites animes </h2>
+        <form name="newAnimeF" action="#" class="box" id="newAnime" onsubmit="return false">
+            <strong>Anime's name</strong>
+            <input type="text" name="anime" size="25" placeholder="Anime" required>
+            <strong>Theme : </strong>
+            <select name="theme" size=1>
+                <option>Action</option>
+                <option>Drama</option>
+                <option>Ecchi</option>
+                <option>Romance</option>
+                <option>Adventure</option>
+                <option>Fights</option>
+                <option>Thriller</option>
+            </select>
+            <br>
+            <button type="submit" class="btn" onclick="ajouter()">Add</button>
+            <button type="button" class="btn" onclick="supprimer()">Delete</button>
+
+        </form>
+        <main>
+            <div class="box">
+
+                <table class="datatable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Theme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <a href="A_propos.html">AnimeMangaWorld</a>
+        </footer>
+        <!-- Footer -->
+    </div>
+</body>
+</html>
